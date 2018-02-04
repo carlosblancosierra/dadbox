@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="geniuses">
+        <item>@string/kinetica</item>
+        <item>@string/sol</item>
+        <item>@string/bling</item>
+        <item>@string/gnomo</item>
+        <item>@string/sensor</item>
+        <item>@string/indigo</item>
+        <item>@string/aura</item>
+    </array>
+
+    <array name="geniuses_description">
+        <item>@string/kinetica_description</item>
+        <item>@string/sol_description</item>
+        <item>@string/bling_description</item>
+        <item>@string/gnomo_description</item>
+        <item>@string/sensor_description</item>
+        <item>@string/indigo_description</item>
+        <item>@string/aura_description</item>
+    </array>
+
+    <array name="geniuses_intelligences">
+        <item>@string/kinetica_intelligence</item>
+        <item>@string/sol_intelligence</item>
+        <item>@string/bling_intelligence</item>
+        <item>@string/gnomo_intelligence</item>
+        <item>@string/sensor_intelligence</item>
+        <item>@string/indigo_intelligence</item>
+        <item>@string/aura_intelligence</item>
+    </array>
+
+    <array name="geniuses_intelligences_descriptions">
+        <item>@string/kinetica_intelligence_description</item>
+        <item>@string/sol_intelligence_description</item>
+        <item>@string/bling_intelligence_description</item>
+        <item>@string/gnomo_intelligence_description</item>
+        <item>@string/sensor_intelligence_description</item>
+        <item>@string/indigo_intelligence_description</item>
+        <item>@string/aura_intelligence_description</item>
+    </array>
+</resources>

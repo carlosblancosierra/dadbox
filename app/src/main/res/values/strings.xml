@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Dadbox</string>
+
+    <!--geniuses-->
+    <string name="kinetica">Kinética</string>
+    <string name="sol">Sol</string>
+    <string name="bling">Bling</string>
+    <string name="gnomo">Gnomo</string>
+    <string name="sensor">Sensor</string>
+    <string name="indigo">Índigo</string>
+    <string name="aura">Aura</string>
+
+    <!--geniuses description-->
+    <string name="kinetica_description">es la genio del cuerpo, ruda y valiente</string>
+    <string name="sol_description">es el genio del arte, reservado y sensible</string>
+    <string name="bling_description">es la genio de la amistad, divertida y chispeante</string>
+    <string name="gnomo_description">es el genio de los cuentos, hablador y simpático</string>
+    <string name="sensor_description">es el genio de los sentidos, ecuánime y analítico</string>
+    <string name="indigo_description">es la genio de la innovación, inventiva y trabajadora</string>
+    <string name="aura_description">es la genio de la introspección, maestra sabia que guía a los demás</string>
+
+    <!--intelligences-->
+    <string name="kinetica_intelligence">Física</string>
+    <string name="sol_intelligence">Musical y Artística</string>
+    <string name="bling_intelligence">Social</string>
+    <string name="gnomo_intelligence">Verbal</string>
+    <string name="sensor_intelligence">Sensorial</string>
+    <string name="indigo_intelligence">Lógico-Matemática</string>
+    <string name="aura_intelligence">Interior</string>
+
+    <!--intelligences description-->
+    <string name="kinetica_intelligence_description">sistema nervioso, acción, movimientos, coordinación</string>
+    <string name="sol_intelligence_description">sensibilidad estética y auditiva</string>
+    <string name="bling_intelligence_description">empatía, relaciones, incluye la llamada \'inteligencia emocional\'</string>
+    <string name="gnomo_intelligence_description">narrativa, lingüística, comunicación</string>
+    <string name="sensor_intelligence_description">percepciones, sentidos, capacidad de antención</string>
+    <string name="indigo_intelligence_description">la inteligencia \'clasica\', hallar soluciones, coeficiente intelectual, memoria</string>
+    <string name="aura_intelligence_description">folosofía, sabiduría, seguridad</string>
+
+    <!--geniuses hex colors-->
+    <string name="kinetica_color">DD2800</string>
+    <string name="sol_color">C34500</string>
+    <string name="bling_color">F0CE31</string>
+    <string name="gnomo_color">409A7F</string>
+    <string name="sensor_color">2D68A1</string>
+    <string name="indigo_color">ADB4FB</string>
+    <string name="aura_color">F4A2F5</string>
+
+    <string name="jsonExample">
+        {\"areas\":[{\"genius_id\":\"0\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"1\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"2\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"3\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"4\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"5\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}},{\"genius_id\":\"6\",\"challenge_main\":{\"name\":\"nombre desafio principal\",\"instructions\":\"instrucciones desafio principal\",\"goal\":\"objetivo desafio principal\"}}]}
+    </string>
+
+</resources>
