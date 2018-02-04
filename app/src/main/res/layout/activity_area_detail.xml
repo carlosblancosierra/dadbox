@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genio"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/area_detail_genius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genio" />
+
+    <TextView
+        android:id="@+id/area_detail_genius_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del genio" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inteligencia"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/area_detail_intelligence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inteligencia" />
+
+    <TextView
+        android:id="@+id/area_detail_intelligence_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripcion de inteligencia" />
+
+    <!--Main Challenge-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desafio Principal"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_main_instrucctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_main_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta" />
+
+    <!--Secondary Challenge-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desafio Secundario"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_secondary_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_secondary_instructionstions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_secondary_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta" />
+
+    <!--Bonus Challenge-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonus Secundario"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_bonus_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_bonus_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones" />
+
+    <TextView
+        android:id="@+id/area_detail_challenge_bonus_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta" />
+
+</LinearLayout>

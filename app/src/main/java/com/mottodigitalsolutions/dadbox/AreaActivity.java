@@ -19,6 +19,7 @@ public class AreaActivity extends AppCompatActivity {
     private AreaAdapter mAdapter;
     private RecyclerView mAreaList;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

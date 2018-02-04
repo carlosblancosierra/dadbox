@@ -1,6 +1,7 @@
 package com.mottodigitalsolutions.dadbox;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,12 +38,35 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.AreaViewHolder
 
         final AreaObject currentArea = mAreasArray.get(position);
         final Context context = holder.itemView.getContext();
-        int geniusId = currentArea.getGeniusId();
+        final int geniusId = currentArea.getGeniusId();
+        final ChallengeObject main_challenge = currentArea.getMainChallenge();
+        final ChallengeObject secondary_challenge = currentArea.getSecondaryChallenge();
+        final ChallengeObject bonus_challenge = currentArea.getBonusChallenge();
+
 
         holder.areaGeniusListItem.setText(
                 context.getResources().getStringArray(R.array.geniuses)[geniusId]);
         holder.areaIntelligenceListItem.setText(
                 context.getResources().getStringArray(R.array.geniuses_intelligences)[geniusId]);
+
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View view) {
+                Intent intent = new Intent(context, AreaDetailActivity.class);
+                intent.putExtra(
+                        context.getResources().getString(R.string.genius_id_key), geniusId);
+                intent.putExtra(
+                        context.getResources().getString(R.string.challenge_main_key), main_challenge);
+                intent.putExtra(
+                        context.getResources().getString(R.string.challenge_secondary_key), secondary_challenge);
+                intent.putExtra(
+                        context.getResources().getString(R.string.challenge_bonus_key), bonus_challenge);
+
+                context.startActivity(intent);
+            }
+        });
 
     }
 
