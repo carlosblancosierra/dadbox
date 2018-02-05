@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
  * Created by carlosblanco on 2/3/18.
  */
 
-public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.AreaViewHolder>{
+public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.AreaViewHolder> {
 
     private int mNumberItems;
     private ArrayList<AreaObject> mAreasArray;
@@ -49,6 +50,16 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.AreaViewHolder
         holder.areaIntelligenceListItem.setText(
                 context.getResources().getStringArray(R.array.geniuses_intelligences)[geniusId]);
 
+        int[] myImageList = new int[]{
+                R.drawable.kinetica_small,
+                R.drawable.sol_small,
+                R.drawable.bling_small,
+                R.drawable.gnomo_small,
+                R.drawable.sensor_small,
+                R.drawable.indigo_small,
+                R.drawable.aura_small};
+
+        holder.areaImageListItem.setImageResource(myImageList[geniusId]);
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -76,24 +87,25 @@ public class AreaAdapter extends RecyclerView.Adapter<AreaAdapter.AreaViewHolder
         return mAreasArray.size();
     }
 
+    public void setAreas(ArrayList<AreaObject> areas) {
+        mAreasArray = areas;
+        notifyDataSetChanged();
+    }
 
     public class AreaViewHolder extends RecyclerView.ViewHolder {
 
         TextView areaGeniusListItem;
         TextView areaIntelligenceListItem;
+        ImageView areaImageListItem;
 
         private AreaViewHolder(View itemView) {
             super(itemView);
 
-            areaGeniusListItem = (TextView) itemView.findViewById(R.id.area_genius);
-            areaIntelligenceListItem = (TextView) itemView.findViewById(R.id.area_intelligence);
+            areaGeniusListItem = itemView.findViewById(R.id.area_list_item_genius);
+            areaIntelligenceListItem = itemView.findViewById(R.id.area_list_item_intelligence);
+            areaImageListItem = itemView.findViewById(R.id.area_list_item_image);
         }
 
-    }
-
-    public void setAreas(ArrayList<AreaObject> areas) {
-        mAreasArray = areas;
-        notifyDataSetChanged();
     }
 
 }

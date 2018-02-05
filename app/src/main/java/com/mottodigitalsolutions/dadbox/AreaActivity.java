@@ -26,7 +26,7 @@ public class AreaActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_areas);
 
-        mAreaList = (RecyclerView) findViewById(R.id.rv_areas);
+        mAreaList = findViewById(R.id.rv_areas);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mAreaList.setLayoutManager(layoutManager);

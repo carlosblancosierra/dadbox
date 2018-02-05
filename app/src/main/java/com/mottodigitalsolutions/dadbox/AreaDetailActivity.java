@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -25,14 +26,16 @@ public class AreaDetailActivity extends AppCompatActivity {
     @BindView(R.id.area_detail_challenge_main_instrucctions) TextView mainChallengeInstructions;
     @BindView(R.id.area_detail_challenge_main_goal) TextView mainChallengeGoal;
 
-    @BindView(R.id.area_detail_challenge_secondary_name) TextView secondaryChallengeName;
-    @BindView(R.id.area_detail_challenge_secondary_instructionstions) TextView secondaryChallengeInstructions;
-    @BindView(R.id.area_detail_challenge_secondary_goal) TextView secondaryChallengeGoal;
+//    @BindView(R.id.area_detail_challenge_secondary_name) TextView secondaryChallengeName;
+//    @BindView(R.id.area_detail_challenge_secondary_instructionstions) TextView secondaryChallengeInstructions;
+//    @BindView(R.id.area_detail_challenge_secondary_goal) TextView secondaryChallengeGoal;
+//
+//    @BindView(R.id.area_detail_challenge_bonus_name) TextView bonusChallengeName;
+//    @BindView(R.id.area_detail_challenge_bonus_instructions) TextView bonusChallengeInstructions;
+//    @BindView(R.id.area_detail_challenge_bonus_goal) TextView bonusChallengeGoal;
 
-    @BindView(R.id.area_detail_challenge_bonus_name) TextView bonusChallengeName;
-    @BindView(R.id.area_detail_challenge_bonus_instructions) TextView bonusChallengeInstructions;
-    @BindView(R.id.area_detail_challenge_bonus_goal) TextView bonusChallengeGoal;
-
+    @BindView(R.id.area_detail_image)
+    ImageView imageView;
 
 
 
@@ -78,13 +81,24 @@ public class AreaDetailActivity extends AppCompatActivity {
         mainChallengeInstructions.setText(mainChallenge.getInstructions());
         mainChallengeGoal.setText(mainChallenge.getGoal());
 
-        secondaryChallengeName.setText(secondaryChallenge.getName());
-        secondaryChallengeInstructions.setText(secondaryChallenge.getInstructions());
-        secondaryChallengeGoal.setText(secondaryChallenge.getGoal());
+        int[] myImageList = new int[]{
+                R.drawable.kinetica_big,
+                R.drawable.sol_big,
+                R.drawable.bling_big,
+                R.drawable.gnomo_big,
+                R.drawable.sensor_big,
+                R.drawable.indigo_big,
+                R.drawable.aura_big};
 
-        bonusChallengeName.setText(bonusChallenge.getName());
-        bonusChallengeInstructions.setText(bonusChallenge.getInstructions());
-        bonusChallengeGoal.setText(bonusChallenge.getGoal());
+        imageView.setImageResource(myImageList[geniusID]);
+
+//        secondaryChallengeName.setText(secondaryChallenge.getName());
+//        secondaryChallengeInstructions.setText(secondaryChallenge.getInstructions());
+//        secondaryChallengeGoal.setText(secondaryChallenge.getGoal());
+//
+//        bonusChallengeName.setText(bonusChallenge.getName());
+//        bonusChallengeInstructions.setText(bonusChallenge.getInstructions());
+//        bonusChallengeGoal.setText(bonusChallenge.getGoal());
 
     }
 }

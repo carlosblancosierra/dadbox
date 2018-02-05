@@ -1,117 +1,276 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/area_detail_gradient"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Genio"
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:background="@android:color/black"
+        android:text="Area de:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/area_detail_genius"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Genio" />
+        android:background="@color/colorPurpleSpaceDark"
+        android:fontFamily="@font/dosis"
+        android:paddingHorizontal="5dp"
+        android:text="@string/kinetica"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/area_detail_genius_description"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Descripcion del genio" />
+        android:background="@color/colorPurpleSpaceDark"
+        android:paddingHorizontal="5dp"
+        android:text="@string/kinetica_description"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/area_detail_genius"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_genius" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Inteligencia"
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:background="@android:color/black"
+        android:text="Inteligencia:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/area_detail_genius_description"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_genius_description" />
 
     <TextView
         android:id="@+id/area_detail_intelligence"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Inteligencia" />
+        android:background="@color/colorPurpleSpaceDark"
+        android:paddingHorizontal="5dp"
+        android:text="@string/kinetica_intelligence"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/area_detail_intelligence_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descripcion de inteligencia" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPurpleSpaceDark"
+        android:paddingHorizontal="5dp"
+        android:text="@string/kinetica_intelligence_description"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/area_detail_intelligence"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_intelligence" />
 
     <!--Main Challenge-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desafio Principal"
-        android:textAppearance="?android:textAppearanceLarge" />
 
     <TextView
         android:id="@+id/area_detail_challenge_main_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
+        android:layout_marginTop="8dp"
+        android:text="Desenredarse "
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/button_main_challenge"
+        app:layout_constraintTop_toBottomOf="@+id/button_main_challenge" />
 
     <TextView
         android:id="@+id/area_detail_challenge_main_instrucctions"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Instrucciones" />
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:text="Instrucciones"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/button_main_challenge"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_label_instructions" />
 
     <TextView
         android:id="@+id/area_detail_challenge_main_goal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp"
+        android:text="Meta"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/area_detail_challenge_main_instrucctions"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/area_detail_label_challenge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Desafios"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/button_main_challenge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Principal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/one_third"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_label_challenge" />
+
+    <Button
+        android:id="@+id/button_secondary_challenge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Secundario"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/one_third"
+        app:layout_constraintTop_toTopOf="@+id/button_main_challenge" />
+
+    <Button
+        android:id="@+id/button_bonus_challenge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bonus"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/button_secondary_challenge"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/button_secondary_challenge" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Meta" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <!--Secondary Challenge-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desafio Secundario"
-        android:textAppearance="?android:textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/area_detail_challenge_secondary_name"
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="392dp"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/area_detail_challenge_secondary_instructionstions"
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Instrucciones" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="207dp" />
 
-    <TextView
-        android:id="@+id/area_detail_challenge_secondary_goal"
+    <ImageView
+        android:id="@+id/area_detail_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kinetica_big" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Meta" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="228dp" />
 
-    <!--Bonus Challenge-->
-    <TextView
-        android:layout_width="match_parent"
+    <android.support.constraint.Guideline
+        android:id="@+id/one_third"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Bonus Secundario"
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="130.6dp" />
 
-    <TextView
-        android:id="@+id/area_detail_challenge_bonus_name"
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="261.2dp" />
 
     <TextView
-        android:id="@+id/area_detail_challenge_bonus_instructions"
-        android:layout_width="wrap_content"
+        android:id="@+id/area_detail_label_instructions"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Instrucciones" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Instrucciones"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_challenge_main_name" />
 
     <TextView
-        android:id="@+id/area_detail_challenge_bonus_goal"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Meta" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Meta"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area_detail_challenge_main_instrucctions" />
 
-</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

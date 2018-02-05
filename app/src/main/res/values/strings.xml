@@ -11,13 +11,13 @@
     <string name="aura">Aura</string>
 
     <!--geniuses description-->
-    <string name="kinetica_description">es la genio del cuerpo, ruda y valiente</string>
-    <string name="sol_description">es el genio del arte, reservado y sensible</string>
-    <string name="bling_description">es la genio de la amistad, divertida y chispeante</string>
-    <string name="gnomo_description">es el genio de los cuentos, hablador y simpático</string>
-    <string name="sensor_description">es el genio de los sentidos, ecuánime y analítico</string>
-    <string name="indigo_description">es la genio de la innovación, inventiva y trabajadora</string>
-    <string name="aura_description">es la genio de la introspección, maestra sabia que guía a los demás</string>
+    <string name="kinetica_description">Es la genio del cuerpo, ruda y valiente</string>
+    <string name="sol_description">Es el genio del arte, reservado y sensible</string>
+    <string name="bling_description">Es la genio de la amistad, divertida y chispeante</string>
+    <string name="gnomo_description">Es el genio de los cuentos, hablador y simpático</string>
+    <string name="sensor_description">Es el genio de los sentidos, ecuánime y analítico</string>
+    <string name="indigo_description">Es la genio de la innovación, inventiva y trabajadora</string>
+    <string name="aura_description">Es la genio de la introspección, maestra sabia que guía a los demás</string>
 
     <!--intelligences-->
     <string name="kinetica_intelligence">Física</string>

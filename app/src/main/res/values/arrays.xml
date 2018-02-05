@@ -40,4 +40,24 @@
         <item>@string/indigo_intelligence_description</item>
         <item>@string/aura_intelligence_description</item>
     </array>
+
+    <array name="geniuses_images_small">
+        <item>@drawable/kinetica_small</item>
+        <item>@drawable/sol_small</item>
+        <item>@drawable/bling_small</item>
+        <item>@drawable/gnomo_small</item>
+        <item>@drawable/sensor_small</item>
+        <item>@drawable/indigo_small</item>
+        <item>@drawable/aura_small</item>
+    </array>
+
+    <array name="geniuses_images_big">
+        <item>@drawable/kinetica_big</item>
+        <item>@drawable/sol_big</item>
+        <item>@drawable/bling_big</item>
+        <item>@drawable/gnomo_big</item>
+        <item>@drawable/sensor_big</item>
+        <item>@drawable/indigo_big</item>
+        <item>@drawable/aura_big</item>
+    </array>
 </resources>

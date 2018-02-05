@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/area_list_item_gradient">
+
+    <ImageView
+        android:id="@+id/area_list_item_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:src="@drawable/gnomo_small" />
 
     <TextView
-        android:id="@+id/area_genius"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:text="Genio"
+        android:id="@+id/area_list_item_genius"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:text="Genio"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white" />
 
     <TextView
-        android:id="@+id/area_intelligence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/area_list_item_intelligence"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:gravity="center_vertical"
+        android:text="Inteligencia"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_weight="1"
-        android:text="Inteligencia" />
+        android:textColor="@android:color/white" />
 </LinearLayout>
